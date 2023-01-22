@@ -1,0 +1,193 @@
+.header{
+    &-top{
+        display: flex;
+        align-items: center;
+        padding: 15px 0;
+    }
+    &__lang{
+      display: flex;
+      align-items: center;
+     justify-content: space-between; 
+     gap: 15px;
+        
+    }
+    &__lang-btn{
+        border: none;
+        background-color: transparent;
+        line-height: 23px;
+        color: $grey;
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+        cursor: pointer;
+    }
+    &__lang-btn:hover{
+        color: rgb(225, 138, 138);
+        transition: all 0.3s ease;
+    }
+    .active{
+        color: rgb(225, 138, 138);
+    }
+    &__list{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 480px;
+        gap: 20px;
+    }
+    &__item{
+        
+        list-style-type: none;
+    }
+    &__list-link{
+        text-decoration: none;
+        line-height: 23px;
+        color: $grey;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        cursor: pointer;
+    }
+    &__list-link:hover{
+        color: rgb(225, 138, 138);
+        transition: all 0.3s ease;
+    }
+    &__top-mode{
+        display: flex;
+        margin-left: 20px;
+    }
+    &__top-text{
+        margin: 0;
+        line-height: 23px;
+        color: $grey;
+    }
+
+}
+.switch{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    width: 33px;
+    height: 19px;
+    border: 1px solid $grey;
+    border-radius: 9.5px;
+    margin-left: 10px;
+    transition: all 0.3s ease;
+
+}
+.switch-input:checked + .switch{
+    background-color:rgb(225, 138, 138);
+    border: 1px solid rgb(225, 138, 138);
+}
+.switch-input:checked + .switch::before{
+    right: 4px;
+    left: auto;
+    background-color: white;
+}
+.switch::before{
+    display: inline-block;
+    content:" ";
+    width:11px;
+    height: 11px;
+    background-color: $grey;
+    position: absolute;
+    z-index: 1;
+    border-radius: 50%;
+    top: 3px;
+    left: 4px;
+    transition: all 0.3s ease;
+}
+.line{
+    color: $grey;
+}
+.middle{
+    display: flex;
+    align-items: center;
+    padding: 15px 0 25px 0;
+    &__logo{
+        font-family: 'Baloo Bhaijaan 2';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 36px;
+        line-height: 56px;
+        text-decoration: none;
+        color: $site;
+    }
+    &__select{
+        background-color: $site;
+        color: white;
+        border: none;
+        padding: 10px;
+        border-radius: 6px;
+        margin-left: 51px;
+    }
+
+    &__input{
+        margin-left: 30px;
+        position: relative;
+        color: $grey;
+        border: 1px solid $grey;
+        border-radius: 6px;
+        padding: 16px 20px;
+        width: 444px;
+    }
+    &__btn{
+        position: absolute;
+        right: 400px;
+        top: 77px;
+        background-image: url(../img/Vector.svg);
+        background-color:$site;
+        background-repeat: no-repeat;
+        background-size: 20px;
+        padding: 20px;
+        border: none;
+        background-position: center;
+        border-radius: 6px;
+        cursor: pointer;
+    
+    }
+    &__link{
+        margin-left: 20px;
+        text-decoration: none;
+        color: $black;
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+        line-height: 140%;
+    }
+    &__link:hover{
+        color:rgb(225, 138, 138);
+    }
+
+  
+    
+}
+.nav{
+    &__list{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        align-items: center;
+    }
+    &__item{
+        list-style-type: none;
+    }
+    &__link{
+        position: absolute;
+        line-height: 140%;
+        color: $black;
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+        text-decoration: none;
+    }
+    &__link:hover{
+        background: #ECF1F4;
+        border-radius: 6px;
+        flex: none;
+        order: 2;
+        flex-grow: 0;
+        color: rgb(225, 138, 138);
+        padding: 5px 8px;
+    }
+}

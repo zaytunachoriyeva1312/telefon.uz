@@ -1,0 +1,43 @@
+.footer{
+
+    &-content{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        align-items: center;
+        margin-bottom: 60px;
+    }
+    &__text{
+        color: $grey;
+    }
+    &__list{
+        list-style-type: none;
+        margin-top: 28px;
+    }
+    &__item{
+        margin-bottom: 10px;
+        
+    }
+    &__link{
+        text-decoration: none;
+        color: $site;
+        line-height: 14px;
+        
+    }
+    &__link:hover{
+        color: rgb(232, 149, 149);
+        transition: all 0.1s ease;
+    }
+    &__right-title{
+        color: $site;
+        line-height: 14px;
+        margin-bottom: 10px;
+    }
+    &__right-list{
+        display: flex;
+        align-items: center;
+        list-style-type: none;
+    }
+    &__right-item{
+        margin-left: 10px;
+    }
+}

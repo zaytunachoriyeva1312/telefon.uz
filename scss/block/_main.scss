@@ -1,0 +1,172 @@
+.main{
+    margin-top: 60px;
+    &__iphone{
+    margin-top: 30px;
+    display: flex;
+    }
+    &__text{
+    margin-left: 70px;
+    }
+    &__title{
+        width: 500px;
+        font-size: 32px;
+        line-height: 40px;
+        color: $site;
+    }
+    &__rest{
+        text-align: center;
+        margin-top: 18px;
+        color: $site;
+        font-size: 24px;
+        line-height: 14px;
+        margin-bottom: 28px;
+
+    }
+    &__span{
+        margin-top: 18px;
+        display: inline-block;
+        margin-left: 160px;
+        font-weight: 700;
+        color: $site;
+        margin-bottom: 20px;
+        font-size: 24px;
+        line-height: 14px;
+    }
+    &__btn{
+        margin-top: 18px;
+        background-color:#a93fcf;
+        color: white;
+        padding: 10px 12px;
+        border: 1px solid #a93fcf ;
+        border-radius: 6px;
+        margin-bottom: 18px;
+        margin-left: 20px;
+        cursor: pointer;
+    }
+    &__btn:hover{
+        background-color: #76b3bb;
+        border: 1px solid #76b3bb ;
+    }
+    &__btns{
+        background-color:#ef26de;
+        color: white;
+        padding: 10px 12px;
+        border: 1px solid #ef26de ;
+        border-radius: 6px;
+        margin-left: 60px;
+        cursor: pointer;
+    }
+    &__btns:hover{
+        background-color: #76b3bb;
+        border: 1px solid #76b3bb ;
+    }
+    &__text-btns{
+        margin-top: 16px;
+    }
+    &__text-btn-one{
+        margin-left: 20px;
+        position: relative;
+        background-color:#2673ef;
+        color: white;
+        padding: 20px 22px 20px 52px;
+        border: 1px solid #2673ef ;
+        border-radius: 6px; 
+        cursor: pointer;
+    }
+    &__text-btn-one::before{
+        content: " ";
+        display: inline-block;
+        background-image: url(../../img/tg-icon.svg);
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        right: 130px;
+        top: 16px;
+        
+    }
+    &__text-btn-one:hover{
+        background-color: #76b3bb;
+        border: 1px solid #76b3bb ;
+    }
+    &__text-btn-two{
+        margin-left: 60px;
+        position: relative;
+        background-color:#0cc267;
+        color: white;
+        padding: 40px 12px 30px 122px;
+        border: 1px solid #0cc267 ;
+        border-radius: 6px; 
+        cursor: pointer;
+    }
+    &__text-btn-two::before{
+        content: " ";
+        display: inline-block;
+        background-image: url(../../img/kisspng-telephone-mobile-phones-computer-icons-handset-phone-icon-phone-icons-softiconsm-5ab03fb222e194\ 1.svg);
+        width: 100px;
+        height: 83px;
+        position: absolute;
+        right: 140px ;
+        top: -1px;
+        
+    }
+    &__text-btn-two:hover{
+        background-color: #76b3bb;
+        border: 1px solid #76b3bb ;
+    }
+    &__middle-title{
+        text-align: center;
+        margin-top: 18px;
+        color: $site;
+        font-weight: 700;
+        line-height: 56px;
+        font-size: 36px;
+    }
+    &__middle-list{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        gap: 25px;
+        margin-bottom: 60px;
+    }
+    &__middle-item{
+        text-align: center;
+        background-color: rgb(242, 237, 237);
+        padding: 30px;
+        border-radius: 12px;
+        list-style-type: none;
+
+    }
+    &__middle-item:hover{
+       background-color: #76b3bb;
+       transition: all 0.1s ease;
+    }
+    &__middle-link{
+        text-decoration: none;
+    }
+    &__middle-item-title{
+        margin-top: 8px;
+        color: rgb(201, 146, 221);
+        margin-bottom: 8px;
+        line-height: 20px;
+
+    }
+    &__middle-item-text{
+        color: $site;
+        line-height: 18px;
+        margin-bottom: 22px;
+        font-size: 20px;
+    
+}
+&__middle-item-span{
+    display: inline-block;
+    padding: 10px 12px;
+    color: white;
+    background-color: #a93fcf;
+    line-height: 20px;
+    font-size: 20px;
+    margin-bottom: 12px;
+    border-radius: 6px;
+}
+&__middle-item-span:hover{
+    background-color: #ef26de;
+}
+}
